@@ -163,4 +163,3 @@ jobs:
               body: body,
               labels: ['lighthouse-audit', 'web-vitals']
             });
-F
