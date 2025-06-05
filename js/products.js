@@ -58,9 +58,6 @@ function displayProducts(products) {
       container.appendChild(productElement);
     });
   }
-  
-
-
 
 loadProducts();
 
