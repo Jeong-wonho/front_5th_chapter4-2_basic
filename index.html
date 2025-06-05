@@ -129,61 +129,91 @@
     <section class="country-bar hidden"></section>
 
     <section class="best-sellers" id="best-sellers-section">
-      <h1>Best Sellers</h1>
-      <hr />
-      <div class="product-slider">
-        <div class="container">
-          <div class="product new">
-            <div class="product-picture">
-              <img src="images/vr1.webp" alt="product: Penom Case" />
+        <h1>Best Sellers</h1>
+        <hr />
+        <div class="product-slider">
+          <div class="container">
+            <!-- Product 1 -->
+            <div class="product new">
+              <div class="product-picture">
+                <picture>
+                  <source srcset="images/vr1.avif" type="image/avif" />
+                  <source srcset="images/vr1.webp" type="image/webp" />
+                  <img
+                    src="images/vr1.jpg"
+                    alt="product: Penom Case"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    style="width: 100%; height: auto; object-fit: contain;"
+                  />
+                </picture>
+              </div>
+              <div class="product-info">
+                <h5 class="categories">Headsets, Apple</h5>
+                <h4 class="title">Apple Headset</h4>
+                <h3 class="price">
+                  <span>US$ 450.00</span>
+                </h3>
+                <button>Add to bag</button>
+              </div>
             </div>
-            <div class="product-info">
-              <h5 class="categories">Headsets, Apple</h5>
-              <h4 class="title">Apple Headset</h4>
-              <h3 class="price">
-                <span>US$ 450.00</span>
-              </h3>
-              <button>Add to bag</button>
+    
+            <!-- Product 2 -->
+            <div class="product new">
+              <div class="product-picture">
+                <picture>
+                  <source srcset="images/vr2.avif" type="image/avif" />
+                  <source srcset="images/vr2.webp" type="image/webp" />
+                  <img
+                    src="images/vr2.jpg"
+                    alt="product: Noise Cancelling Headphone"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    style="width: 100%; height: auto; object-fit: contain;"
+                  />
+                </picture>
+              </div>
+              <div class="product-info">
+                <h5 class="categories">Headsets, PS</h5>
+                <h4 class="title">Playstation Headset</h4>
+                <h3 class="price">
+                  <span>US$ 399.99</span>
+                </h3>
+                <button>Add to bag</button>
+              </div>
             </div>
-          </div>
-
-          <div class="product new">
-            <div class="product-picture">
-              <img
-                src="images/vr2.webp"
-                alt="product: Noise Cancelling Headphone"
-              />
-            </div>
-            <div class="product-info">
-              <h5 class="categories">Headsets, PS</h5>
-              <h4 class="title">Playstation Headset</h4>
-              <h3 class="price">
-                <span>US$ 399.99</span>
-              </h3>
-              <button>Add to bag</button>
-            </div>
-          </div>
-
-          <div class="product">
-            <div class="product-picture">
-              <img
-                src="images/vr3.webp"
-                alt="product: Canon Digital SLR EOS Rebel T6"
-              />
-            </div>
-            <div class="product-info">
-              <h5 class="categories">Headsets, Oculus</h5>
-              <h4 class="title">Oculus Headset</h4>
-              <h3 class="price">
-                <span class="discounted-price">US$ 349.99</span>
-                <span class="original-price">US$ 419.99</span>
-              </h3>
-              <button>Add to bag</button>
+    
+            <!-- Product 3 -->
+            <div class="product">
+              <div class="product-picture">
+                <picture>
+                  <source srcset="images/vr3.avif" type="image/avif" />
+                  <source srcset="images/vr3.webp" type="image/webp" />
+                  <img
+                    src="images/vr3.jpg"
+                    alt="product: Canon Digital SLR EOS Rebel T6"
+                    width="300"
+                    height="300"
+                    loading="lazy"
+                    style="width: 100%; height: auto; object-fit: contain;"
+                  />
+                </picture>
+              </div>
+              <div class="product-info">
+                <h5 class="categories">Headsets, Oculus</h5>
+                <h4 class="title">Oculus Headset</h4>
+                <h3 class="price">
+                  <span class="discounted-price">US$ 349.99</span>
+                  <span class="original-price">US$ 419.99</span>
+                </h3>
+                <button>Add to bag</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <section class="best-sellers">
       <h1>All Products</h1>
