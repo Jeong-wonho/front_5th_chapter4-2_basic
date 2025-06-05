@@ -56,9 +56,34 @@
         
         <section class="hero">
 
-            <img class="desktop" loading="eager" src="images/Hero_Desktop.avif">
-            <img class="mobile" loading="eager"src="images/Hero_Mobile.avif">
-            <img class="tablet" loading="eager"src="images/Hero_Tablet.avif">
+            <picture>
+                <source
+                  srcset="images/Hero_Desktop.avif"
+                  media="(min-width: 961px)"
+                  type="image/avif"
+                />
+                <source
+                  srcset="images/Hero_Tablet.avif"
+                  media="(min-width: 577px)"
+                  type="image/avif"
+                />
+                <source
+                  srcset="images/Hero_Mobile.avif"
+                  media="(max-width: 576px)"
+                  type="image/avif"
+                />
+              
+                <!-- fallback (WebP or JPG) -->
+                <img
+                  src="images/Hero_Desktop.webp"
+                  alt="VR Headsets Banner"
+                  width="1440"
+                  height="600"
+                  loading="eager"
+                  fetchpriority="high"
+                  style="width: 100%; height: auto; object-fit: cover;"
+                />
+              </picture>
 
            
             <div class="hero-content">
