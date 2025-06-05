@@ -5,8 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Tech Shop</title>
-    <meta name="description" content="Discover the latest VR headsets and tech gadgets at Tech Shop. Shop now for the best deals on top brands.">
-    <meta name="keywords" content="VR headsets, tech gadgets, online shopping, best deals, top brands">
+    <meta
+      name="description"
+      content="Discover the latest VR headsets and tech gadgets at Tech Shop. Shop now for the best deals on top brands."
+    />
+    <meta
+      name="keywords"
+      content="VR headsets, tech gadgets, online shopping, best deals, top brands"
+    />
+
+    <!-- 1) Preconnect to Google Fonts domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- 2) Preload Hero 이미지 (LCP) -->
     <link
@@ -24,10 +34,25 @@
             100vw
             "
     />
+    <!-- 2) Preload main stylesheet, then load it -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Heebo:300,400,600,700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
     <!-- Google Tag Manager -->
@@ -69,7 +94,6 @@
         }
       });
     </script>
-    
   </head>
 
   <body>
