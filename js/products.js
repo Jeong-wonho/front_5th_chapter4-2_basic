@@ -6,6 +6,7 @@ async function loadProducts() {
 
 function displayProducts(products) {
     const container = document.querySelector('#all-products .container');
+    const fragment = document.createDocumentFragment();
   
     products.forEach(product => {
       const productElement = document.createElement('div');
@@ -19,6 +20,7 @@ function displayProducts(products) {
       img.src = product.image;
       img.alt = `product: ${product.title}`;
       img.width = 250;
+      img.style.height = 'auto';
   
       // ★ 여기에 lazy 속성 추가
       img.loading = 'lazy'; 
@@ -54,10 +56,14 @@ function displayProducts(products) {
   
       productElement.appendChild(pictureDiv);
       productElement.appendChild(infoDiv);
-  
-      container.appendChild(productElement);
+      fragment.appendChild(productElement);
     });
+    container.appendChild(fragment);
   }
 
 loadProducts();
 
+// Simulate heavy operation. It could be a complex price calculation.
+for (let i = 0; i < 10000000; i++) {
+    const temp = Math.sqrt(i) * Math.sqrt(i);
+}
