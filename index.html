@@ -56,34 +56,9 @@
         
         <section class="hero">
 
-            <picture>
-                <source
-                  srcset="images/Hero_Desktop.avif"
-                  media="(min-width: 961px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="images/Hero_Tablet.avif"
-                  media="(min-width: 577px)"
-                  type="image/avif"
-                />
-                <source
-                  srcset="images/Hero_Mobile.avif"
-                  media="(max-width: 576px)"
-                  type="image/avif"
-                />
-              
-                <!-- fallback (WebP or JPG) -->
-                <img
-                  src="images/Hero_Desktop.webp"
-                  alt="VR Headsets Banner"
-                  width="1440"
-                  height="600"
-                  loading="eager"
-                  fetchpriority="high"
-                  style="width: 100%; height: auto; object-fit: cover;"
-                />
-              </picture>
+            <img class="desktop" loading="eager" src="images/Hero_Desktop.webp">
+            <img class="mobile" loading="eager" src="images/Hero_Mobile.webp">
+            <img class="tablet" loading="eager" src="images/Hero_Tablet.webp">
 
            
             <div class="hero-content">
@@ -109,7 +84,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.avif" alt="product: Penom Case">
+                            <img src="images/vr1.webp" alt="product: Penom Case">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Apple</h5>
@@ -123,7 +98,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr2.avif" alt="product: Noise Cancelling Headphone">
+                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, PS</h5>
@@ -137,7 +112,7 @@
 
                     <div class="product">
                         <div class="product-picture">
-                            <img src="images/vr3.avif" alt="product: Canon Digital SLR EOS Rebel T6">
+                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Oculus</h5>
